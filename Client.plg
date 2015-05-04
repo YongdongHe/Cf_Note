@@ -1,0 +1,97 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Client - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPC44.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Learning\卓工\MyProjects\Client-17.3\CalendarCtrl.cpp"
+"D:\Learning\卓工\MyProjects\Client-17.3\Client.cpp"
+"D:\Learning\卓工\MyProjects\Client-17.3\ClientDlg.cpp"
+"D:\Learning\卓工\MyProjects\Client-17.3\Info.cpp"
+"D:\Learning\卓工\MyProjects\Client-17.3\MainDlg.cpp"
+"D:\Learning\卓工\MyProjects\Client-17.3\MUSICDlg.cpp"
+"D:\Learning\卓工\MyProjects\Client-17.3\Satety.cpp"
+"D:\Learning\卓工\MyProjects\Client-17.3\Setting.cpp"
+"D:\Learning\卓工\MyProjects\Client-17.3\StaticCalendarDlg.cpp"
+"D:\Learning\卓工\MyProjects\Client-17.3\定时提醒Dlg.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPC44.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPC45.tmp" with contents
+[
+gdi32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/Client.pdb" /debug /machine:I386 /out:"Debug/Client.exe" /pdbtype:sept 
+".\Debug\Ado.obj"
+".\Debug\CalendarCtrl.obj"
+".\Debug\Client.obj"
+".\Debug\Client_PlayMusic.obj"
+".\Debug\ClientDlg.obj"
+".\Debug\ClientRegister.obj"
+".\Debug\DiaryDlg.obj"
+".\Debug\Info.obj"
+".\Debug\MainDlg.obj"
+".\Debug\MUSICDlg.obj"
+".\Debug\Satety.obj"
+".\Debug\Setting.obj"
+".\Debug\SpringButton.obj"
+".\Debug\StaticCalendarDlg.obj"
+".\Debug\StdAfx.obj"
+".\Debug\Tip.obj"
+".\Debug\定时提醒Dlg.obj"
+".\Debug\Client.res"
+]
+Creating command line "link.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPC45.tmp"
+<h3>Output Window</h3>
+Compiling...
+CalendarCtrl.cpp
+d:\learning\卓工\myprojects\client-17.3\debug\msado15.tlh(476) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+d:\learning\卓工\myprojects\client-17.3\calendarctrl.cpp(898) : warning C4244: '=' : conversion from 'double' to 'long', possible loss of data
+Satety.cpp
+d:\learning\卓工\myprojects\client-17.3\debug\msado15.tlh(476) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+Setting.cpp
+d:\learning\卓工\myprojects\client-17.3\debug\msado15.tlh(476) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+定时提醒Dlg.cpp
+d:\learning\卓工\myprojects\client-17.3\debug\msado15.tlh(476) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+Generating Code...
+Skipping... (no relevant changes detected)
+Client.cpp
+ClientDlg.cpp
+Info.cpp
+MainDlg.cpp
+MUSICDlg.cpp
+StaticCalendarDlg.cpp
+Linking...
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP1970.tmp" with contents
+[
+/nologo /o"Debug/Client.bsc" 
+".\Debug\StdAfx.sbr"
+".\Debug\Ado.sbr"
+".\Debug\CalendarCtrl.sbr"
+".\Debug\Client.sbr"
+".\Debug\Client_PlayMusic.sbr"
+".\Debug\ClientDlg.sbr"
+".\Debug\ClientRegister.sbr"
+".\Debug\DiaryDlg.sbr"
+".\Debug\Info.sbr"
+".\Debug\MainDlg.sbr"
+".\Debug\MUSICDlg.sbr"
+".\Debug\Satety.sbr"
+".\Debug\Setting.sbr"
+".\Debug\SpringButton.sbr"
+".\Debug\StaticCalendarDlg.sbr"
+".\Debug\Tip.sbr"
+".\Debug\定时提醒Dlg.sbr"]
+Creating command line "bscmake.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP1970.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+Client.exe - 0 error(s), 5 warning(s)
+</pre>
+</body>
+</html>

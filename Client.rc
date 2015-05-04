@@ -1,0 +1,744 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Client.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Client.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 Client"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Client 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2014",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_CLIENT_LoginDlg DIALOGEX 0, 0, 209, 371
+STYLE WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_Admin,56,189,92,16,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_EDIT_Pwd,56,228,93,16,ES_PASSWORD | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER
+    PUSHBUTTON      "",IDC_BUTTON_Log,30,282,149,27
+    PUSHBUTTON      "",IDC_BUTTON_Register,30,321,149,27
+    PUSHBUTTON      "",IDC_BUTTON_Close,188,0,21,17
+END
+
+IDD_CLIENT_RegisterDlg DIALOG DISCARDABLE  0, 0, 180, 338
+STYLE WS_POPUP
+FONT 10, "宋体"
+BEGIN
+    PUSHBUTTON      "",IDOK,23,279,129,25
+    EDITTEXT        IDC_EDIT_NewAdmin,43,161,82,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_EDIT_PwdSet,43,195,82,12,ES_PASSWORD | 
+                    ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT_PwdSure,43,232,82,12,ES_PASSWORD | 
+                    ES_AUTOHSCROLL | NOT WS_BORDER
+    PUSHBUTTON      "",IDC_BUTTON_AdminCheck,134,158,13,14
+    PUSHBUTTON      "",IDC_Close,161,0,18,15
+END
+
+IDD_DIARY_DIALOG DIALOG DISCARDABLE  0, 0, 393, 281
+STYLE WS_POPUP
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "",IDOK,269,113,45,18
+    PUSHBUTTON      "",IDCANCEL,334,104,35,19
+    EDITTEXT        IDC_EDIT_TEXT,22,81,183,177,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_WANTRETURN
+    EDITTEXT        IDC_EDIT_HEAD,55,52,148,18,ES_MULTILINE | ES_AUTOVSCROLL
+    COMBOBOX        IDC_COMBO_Date,314,158,59,62,CBS_SIMPLE | 
+                    CBS_AUTOHSCROLL | NOT WS_VISIBLE | WS_TABSTOP
+    PUSHBUTTON      "",IDC_BUTTON_Weather,349,0,44,50
+    PUSHBUTTON      "",IDC_BUTTON_SD,275,134,39,20
+    LTEXT           "主题",IDC_STATIC_THE,21,56,32,21
+END
+
+IDD_DIALOG_MAIN DIALOG DISCARDABLE  0, 0, 450, 309
+STYLE WS_POPUP
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "",IDC_BUTTON_Memorandum,238,205,82,66
+    PUSHBUTTON      "",IDC_BUTTON_Diary,371,83,58,43
+    PUSHBUTTON      "",IDC_BUTTON_Setting,367,206,59,59
+    PUSHBUTTON      "",IDC_BUTTON_Calendar,262,68,51,54
+    PUSHBUTTON      "",IDC_Button_MainClose,420,0,30,38
+    LTEXT           "TOP",IDC_STATIC_Motto,56,93,120,135
+    LTEXT           "Static",IDC_STATIC_GREET,29,52,186,29
+    PUSHBUTTON      "",IDC_BUTTON_MINI,396,0,25,39
+END
+
+IDD_MUSIC_DIALOG DIALOGEX 0, 0, 492, 268
+STYLE WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "Slider1",IDC_SLIDER_Volume,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,87,93,84,15
+    COMBOBOX        IDC_COMBO_MusicList,119,67,84,129,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "",IDC_BUTTON_Play,144,117,48,22
+    PUSHBUTTON      "",IDC_BUTTON_Pause,70,115,56,23
+    PUSHBUTTON      "",IDC_BUTTON_Mode,140,160,63,21
+    PUSHBUTTON      "",IDC_BUTTON_EXIT,395,163,47,25
+    COMBOBOX        IDC_COMBO_FONT,125,205,56,80,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_CLIENT_Safety DIALOG DISCARDABLE  0, 0, 369, 202
+STYLE WS_POPUP
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "",IDOK,224,90,45,18
+    PUSHBUTTON      "",IDCANCEL,295,128,35,19
+    EDITTEXT        IDC_EDIT_FIRST,88,90,50,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SECOND,88,116,50,14,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_THIRD,88,140,50,14,ES_PASSWORD | ES_AUTOHSCROLL
+END
+
+IDD_CLIENT_INFO DIALOG DISCARDABLE  0, 0, 369, 201
+STYLE WS_POPUP
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "",IDOK,228,87,45,18
+    EDITTEXT        IDC_EDIT_NICKNAME,75,54,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BIRTHDAY,75,93,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HABIT,75,75,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITCONSTELLATION,75,112,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_WEIGHT,75,133,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HEIGHT,75,154,50,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "",IDCANCEL,299,123,35,19
+END
+
+IDD_MY_DIALOG DIALOGEX 0, 0, 525, 376
+STYLE WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "",IDCANCEL,73,286,47,25
+    EDITTEXT        IDC_EDIT_TIP,241,239,242,69,ES_AUTOHSCROLL
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER_DATE,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,265,218,
+                    69,14
+    LTEXT           "时间",IDC_STATIC,337,221,20,9
+    LTEXT           "日期",IDC_STATIC,241,223,20,9
+    COMBOBOX        IDC_COMBO_HOUR,357,219,26,99,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "：",IDC_STATIC,387,219,8,12
+    COMBOBOX        IDC_COMBO_MINUTE,396,219,26,100,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "List1",IDC_LIST_TIP,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,241,109,242,88
+    PUSHBUTTON      "",IDC_BUTTON_SAVE,86,149,65,25
+    PUSHBUTTON      "",IDC_BUTTON_DELETE,106,189,55,24
+    CONTROL         "设置闹钟",IDC_CHECK_SETALARM,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,429,215,60,17
+END
+
+IDD_DIALOG_TIP DIALOG DISCARDABLE  0, 0, 245, 287
+STYLE WS_POPUP
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_EDIT_REGULARTIP,100,155,86,34,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_EDIT_LASTMINUTE,154,194,16,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "",IDC_BUTTON_OK,119,227,30,20
+    EDITTEXT        IDC_EDIT_TIME,93,93,54,21,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | NOT WS_BORDER
+    PUSHBUTTON      "",IDC_BUTTON_SHUT,43,227,58,20
+    CONTROL         "",IDC_CHECK_OPEN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    112,195,8,11
+    PUSHBUTTON      "",IDC_BUTTON_TipClose,172,227,32,20
+END
+
+IDD_DIALOG_Setting DIALOG DISCARDABLE  0, 0, 370, 202
+STYLE WS_POPUP
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "",IDC_BUTTON_Safety,60,133,77,22
+    PUSHBUTTON      "",IDC_BUTTON_INFO,68,99,57,21
+    PUSHBUTTON      "",IDC_BUTTON_MUSIC,60,64,66,21
+    PUSHBUTTON      "",IDC_BUTTON_SetClose,298,124,35,19
+END
+
+IDD_STATICCALENDAR_DIALOG DIALOGEX 0, 0, 377, 262
+STYLE WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW
+FONT 10, "华文仿宋", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_CALENDAR,"Static",SS_BLACKFRAME,177,83,152,151
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,221,67,61,12
+    CONTROL         "前置星期天",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_TABSTOP,308,13,56,12
+    PUSHBUTTON      "",IDC_BUTTON1,286,67,18,13
+    PUSHBUTTON      "",IDC_BUTTON2,197,67,18,13
+    PUSHBUTTON      "",IDC_BUTTON3,310,67,18,13
+    PUSHBUTTON      "",IDC_BUTTON4,175,67,18,13
+    PUSHBUTTON      "",IDC_BUTTON5,77,103,56,26
+    PUSHBUTTON      "",IDC_BUTTON6,37,170,56,24
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Client Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Client\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2014\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Client.EXE\0"
+            VALUE "ProductName", "Client 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_CLIENT_RegisterDlg, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 173
+        BOTTOMMARGIN, 331
+    END
+
+    IDD_DIARY_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 386
+        VERTGUIDE, 314
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 274
+    END
+
+    IDD_DIALOG_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 443
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 302
+        HORZGUIDE, 7
+    END
+
+    IDD_MUSIC_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 485
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 261
+    END
+
+    IDD_CLIENT_Safety, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 362
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 195
+    END
+
+    IDD_CLIENT_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 362
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_MY_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 518
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 368
+    END
+
+    IDD_DIALOG_TIP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 238
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 280
+    END
+
+    IDD_DIALOG_Setting, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 363
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 195
+    END
+
+    IDD_STATICCALENDAR_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 371
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 255
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_Log1         BITMAP  DISCARDABLE     "res\\登陆界面登陆按钮1.bmp"
+IDB_BITMAP_Log2         BITMAP  DISCARDABLE     "res\\登陆界面登陆按钮2.bmp"
+IDB_BITMAP_Log3         BITMAP  DISCARDABLE     "res\\登陆界面登陆按钮3.bmp"
+IDB_BITMAP_Clientbg     BITMAP  DISCARDABLE     "res\\登陆界面1.bmp"
+IDB_BITMAP_Re1          BITMAP  DISCARDABLE     "res\\登陆界面注册按钮1.bmp"
+IDB_BITMAP_Re2          BITMAP  DISCARDABLE     "res\\登陆界面注册按钮2.bmp"
+IDB_BITMAP_Re3          BITMAP  DISCARDABLE     "res\\登陆界面注册按钮3.bmp"
+IDB_BITMAP_Close1       BITMAP  DISCARDABLE     "res\\登陆界面关闭按钮1.bmp"
+IDB_BITMAP_Close2       BITMAP  DISCARDABLE     "res\\登陆界面关闭按钮2.bmp"
+IDB_BITMAP_Close3       BITMAP  DISCARDABLE     "res\\登陆界面关闭按钮3.bmp"
+IDB_BITMAP_ReDlgbg      BITMAP  DISCARDABLE     "res\\注册界面1.bmp"
+IDB_BITMAP_ReDlgClose   BITMAP  DISCARDABLE     "res\\注册界面关闭按钮.bmp"
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\70018411d14f55ebdf4d7f1258b31b8d-img2ico.net.bmp"
+IDB_BITMAP_MainDlgbg    BITMAP  DISCARDABLE     "res\\主界面.bmp"
+IDB_BITMAP_Main_Note2   BITMAP  DISCARDABLE     "res\\日程备忘录打开按钮2.bmp"
+IDB_BITMAP_Main_Note3   BITMAP  DISCARDABLE     "res\\日程备忘录打开按钮3.bmp"
+IDB_BITMAP_Main_Note1   BITMAP  DISCARDABLE     "res\\日程备忘录打开按钮1.bmp"
+IDB_BITMAP_Main_Close1  BITMAP  DISCARDABLE     "res\\主界面关闭按钮1.bmp"
+IDB_BITMAP_Main_Close2  BITMAP  DISCARDABLE     "res\\主界面关闭按钮2.bmp"
+IDB_BITMAP_Main_Close3  BITMAP  DISCARDABLE     "res\\主界面关闭按钮3.bmp"
+IDB_BITMAP_Main_Diary1  BITMAP  DISCARDABLE     "res\\主界面日记打开按钮1.bmp"
+IDB_BITMAP_Main_Diary2  BITMAP  DISCARDABLE     "res\\主界面日记打开按钮2.bmp"
+IDB_BITMAP_Main_Diary3  BITMAP  DISCARDABLE     "res\\主界面日记打开按钮3.bmp"
+IDB_BITMAP_Main_Set1    BITMAP  DISCARDABLE     "res\\主界面设置打开按钮1.bmp"
+IDB_BITMAP_Main_Set2    BITMAP  DISCARDABLE     "res\\主界面设置打开按钮2.bmp"
+IDB_BITMAP_Main_Set3    BITMAP  DISCARDABLE     "res\\主界面设置打开按钮3.bmp"
+IDB_BITMAP_SIGNAL       BITMAP  DISCARDABLE     "res\\u=1463911280,1493303818&fm=90&gp=0.bmp"
+IDB_BITMAP_Diarybg      BITMAP  DISCARDABLE     "res\\日记本.bmp"
+IDB_BITMAP_Diary_Save1  BITMAP  DISCARDABLE     "res\\日记本保存按钮1.bmp"
+IDB_BITMAP_Diary_Save2  BITMAP  DISCARDABLE     "res\\日记本保存按钮2.bmp"
+IDB_BITMAP_Diary_Open1  BITMAP  DISCARDABLE     "res\\日记本打开按钮1.bmp"
+IDB_BITMAP_Diary_Open2  BITMAP  DISCARDABLE     "res\\日记本打开按钮2.bmp"
+IDB_BITMAP_Diary_Close1 BITMAP  DISCARDABLE     "res\\日记本返回按钮1.bmp"
+IDB_BITMAP_Diary_Close2 BITMAP  DISCARDABLE     "res\\日记本返回按钮2.bmp"
+IDB_BITMAP_Setbg        BITMAP  DISCARDABLE     "res\\设置界面.bmp"
+IDB_BITMAP_Set_perS1    BITMAP  DISCARDABLE     "res\\个性化设置按钮1.bmp"
+IDB_BITMAP_Set_perS2    BITMAP  DISCARDABLE     "res\\个性化设置2.bmp"
+IDB_BITMAP_Set_Safe1    BITMAP  DISCARDABLE     "res\\设置项目账户按钮设置1.bmp"
+IDB_BITMAP_Set_Safe2    BITMAP  DISCARDABLE     "res\\设置项目账户安全设置2.bmp"
+IDB_BITMAP_Set_perD1    BITMAP  DISCARDABLE     "res\\设置项目个人资料1.bmp"
+IDB_BITMAP_Set_perD2    BITMAP  DISCARDABLE     "res\\设置项目个人资料2.bmp"
+IDB_BITMAP_Musicbg      BITMAP  DISCARDABLE     "res\\设置音乐.bmp"
+IDB_BITMAP_Musicplay    BITMAP  DISCARDABLE     "res\\音乐播放.bmp"
+IDB_BITMAP_Musicpause   BITMAP  DISCARDABLE     "res\\音乐暂停.bmp"
+IDB_BITMAP_Musicadd     BITMAP  DISCARDABLE     "res\\音乐添加1.bmp"
+IDB_BITMAP_MusicSingle  BITMAP  DISCARDABLE     "res\\设置项目单曲循环.bmp"
+IDB_BITMAP_MusicOrder   BITMAP  DISCARDABLE     "res\\设置项目顺序播放.bmp"
+IDB_BITMAP_MusicRandom  BITMAP  DISCARDABLE     "res\\设置项目随机播放.bmp"
+IDB_BITMAP_Notebg       BITMAP  DISCARDABLE     "res\\日程提醒背景.bmp"
+IDB_BITMAP_NoteDelete1  BITMAP  DISCARDABLE     "res\\日程提醒-删除1.bmp"
+IDB_BITMAP_NoteDelete2  BITMAP  DISCARDABLE     "res\\日程提醒-删除2.bmp"
+IDB_BITMAP_NoteSave1    BITMAP  DISCARDABLE     "res\\日程提醒-添加1.bmp"
+IDB_BITMAP_NoteSave2    BITMAP  DISCARDABLE     "res\\日程提醒-添加2.bmp"
+IDB_BITMAP_Infobg       BITMAP  DISCARDABLE     "res\\设置个人资料.bmp"
+IDB_BITMAP_safebg       BITMAP  DISCARDABLE     "res\\设置账户安全.bmp"
+IDB_BITMAP_Cal          BITMAP  DISCARDABLE     "res\\bitmap2.bmp"
+IDB_BITMAP_WhiteBrush   BITMAP  DISCARDABLE     "res\\bmp00001.bmp"
+IDB_BITMAP_Calbg        BITMAP  DISCARDABLE     "res\\日历背景.bmp"
+IDB_BITMAP_Calz1        BITMAP  DISCARDABLE     "res\\日历左1.bmp"
+IDB_BITMAP_Calz2        BITMAP  DISCARDABLE     "res\\日历左2.bmp"
+IDB_BITMAP_Calzz1       BITMAP  DISCARDABLE     "res\\日历左左1.bmp"
+IDB_BITMAP_Calzz2       BITMAP  DISCARDABLE     "res\\日历左左2.bmp"
+IDB_BITMAP_Caly1        BITMAP  DISCARDABLE     "res\\日历右1.bmp"
+IDB_BITMAP_Caly2        BITMAP  DISCARDABLE     "res\\日历右2.bmp"
+IDB_BITMAP_Calyy1       BITMAP  DISCARDABLE     "res\\日历右右1.bmp"
+IDB_BITMAP_Calyy2       BITMAP  DISCARDABLE     "res\\日历右右2.bmp"
+IDB_BITMAP_CalClose1    BITMAP  DISCARDABLE     "res\\日历关闭1.bmp"
+IDB_BITMAP_CalClose2    BITMAP  DISCARDABLE     "res\\日历关闭2.bmp"
+IDB_BITMAP_CalStyle1    BITMAP  DISCARDABLE     "res\\日历切换风格1.bmp"
+IDB_BITMAP_CalStyle2    BITMAP  DISCARDABLE     "res\\日历切换风格2.bmp"
+IDB_BITMAP_Tipbg        BITMAP  DISCARDABLE     "res\\提醒界面.bmp"
+IDB_BITMAP_Tip_Close1   BITMAP  DISCARDABLE     "res\\日程提醒关闭1.bmp"
+IDB_BITMAP_Tip_Close2   BITMAP  DISCARDABLE     "res\\日程提醒关闭2.bmp"
+IDB_BITMAP_Tip_Dtip1    BITMAP  DISCARDABLE     "res\\日程提醒不再提醒1.bmp"
+IDB_BITMAP_Tip_Dtip2    BITMAP  DISCARDABLE     "res\\日程提醒不再提醒2.bmp"
+IDB_BITMAP_Tip_OK1      BITMAP  DISCARDABLE     "res\\日程提醒确定1.bmp"
+IDB_BITMAP_Tip_OK2      BITMAP  DISCARDABLE     "res\\日程提醒确定2.bmp"
+IDB_BITMAP_Sunday2      BITMAP  DISCARDABLE     "res\\星期天后置.bmp"
+IDB_BITMAP_Sunday1      BITMAP  DISCARDABLE     "res\\星期天前置.bmp"
+IDB_BITMAP_MainMini1    BITMAP  DISCARDABLE     "res\\主界面最小化按钮1.bmp"
+IDB_BITMAP_MainMini2    BITMAP  DISCARDABLE     "res\\主界面最小化按钮2.bmp"
+IDB_BITMAP_MainMini3    BITMAP  DISCARDABLE     "res\\主界面最小化按钮3.bmp"
+IDB_BITMAP_Kid1         BITMAP  DISCARDABLE     "res\\晴天娃娃一般.bmp"
+IDB_BITMAP_Kid2         BITMAP  DISCARDABLE     "res\\晴天娃娃笑.bmp"
+IDB_BITMAP_Kid3         BITMAP  DISCARDABLE     "res\\晴天娃娃不开心.bmp"
+IDB_BITMAP_Diarybg1     BITMAP  DISCARDABLE     "res\\日记本背景.bmp"
+IDB_BITMAP_Diarybg2     BITMAP  DISCARDABLE     "res\\日记本阳光.bmp"
+IDB_BITMAP_Diarybg3     BITMAP  DISCARDABLE     "res\\日记本下雨.bmp"
+IDB_BITMAP_ReAdminC1    BITMAP  DISCARDABLE     "res\\注册界面检查按钮1.bmp"
+IDB_BITMAP_ReAdminC2    BITMAP  DISCARDABLE     "res\\注册界面检查按钮2.bmp"
+IDB_BITMAP_ReAdminC3    BITMAP  DISCARDABLE     "res\\注册界面检查按钮3.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIARY_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO_Date, 0x403, 9, 0
+0xc2d0, 0xc4b5, 0xd5c8, 0xc7bc, "\000" 
+    0
+END
+
+IDD_MY_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO_HOUR, 0x403, 3, 0
+0x3030, "\000" 
+    IDC_COMBO_HOUR, 0x403, 3, 0
+0x3130, "\000" 
+    IDC_COMBO_HOUR, 0x403, 3, 0
+0x3230, "\000" 
+    IDC_COMBO_HOUR, 0x403, 3, 0
+0x3330, "\000" 
+    IDC_COMBO_HOUR, 0x403, 3, 0
+0x3430, "\000" 
+    IDC_COMBO_HOUR, 0x403, 3, 0
+0x3530, "\000" 
+    IDC_COMBO_HOUR, 0x403, 3, 0
+0x3630, "\000" 
+    IDC_COMBO_HOUR, 0x403, 3, 0
+0x3730, "\000" 
+    IDC_COMBO_HOUR, 0x403, 3, 0
+0x3830, "\000" 
+    IDC_COMBO_HOUR, 0x403, 3, 0
+0x3930, "\000" 
+    IDC_COMBO_HOUR, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_COMBO_HOUR, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_COMBO_HOUR, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_COMBO_HOUR, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_COMBO_HOUR, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_COMBO_HOUR, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_COMBO_HOUR, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_COMBO_HOUR, 0x403, 3, 0
+0x3731, "\000" 
+    IDC_COMBO_HOUR, 0x403, 3, 0
+0x3831, "\000" 
+    IDC_COMBO_HOUR, 0x403, 3, 0
+0x3931, "\000" 
+    IDC_COMBO_HOUR, 0x403, 3, 0
+0x3032, "\000" 
+    IDC_COMBO_HOUR, 0x403, 3, 0
+0x3132, "\000" 
+    IDC_COMBO_HOUR, 0x403, 3, 0
+0x3232, "\000" 
+    IDC_COMBO_HOUR, 0x403, 3, 0
+0x3332, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3030, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3130, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3230, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3330, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3430, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3530, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3630, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3730, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3830, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3930, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3731, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3831, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3931, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3032, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3132, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3232, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3332, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3432, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3532, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3632, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3732, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3832, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3932, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3033, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3133, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3233, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3333, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3433, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3533, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3633, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3733, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3833, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3933, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3034, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3134, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3234, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3334, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3434, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3534, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3634, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3734, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3834, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3934, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3035, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3135, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3235, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3335, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3435, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3535, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3635, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3735, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3835, "\000" 
+    IDC_COMBO_MINUTE, 0x403, 3, 0
+0x3935, "\000" 
+    0
+END
+
+IDD_MUSIC_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO_FONT, 0x403, 5, 0
+0xa5c1, 0xe9ca, "\000" 
+    IDC_COMBO_FONT, 0x403, 9, 0
+0xaabb, 0xc4ce, 0xc2d0, 0xbace, "\000" 
+    IDC_COMBO_FONT, 0x403, 9, 0
+0xa2ce, 0xedc8, 0xc5d1, 0xdaba, "\000" 
+    IDC_COMBO_FONT, 0x403, 9, 0
+0xbdb7, 0xfdd5, 0xe6ca, 0xe5cc, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+IDR_WAVE1               WAVE    DISCARDABLE     "res\\tik.wav"
+IDR_WAVE2               WAVE    DISCARDABLE     "res\\qq 消息声皮卡丘 短信提示音.wav"
+IDR_WAVE3               WAVE    DISCARDABLE     "res\\steer life.wav"
+IDR_WAVE4               WAVE    DISCARDABLE     "res\\Onimer.wav"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 Client(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Client.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
